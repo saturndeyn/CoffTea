@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login </title>
+	
+	
+	<style>
+	    body {
+	background-color: #1F1614;
+	font-family: Arial, sans-serif;
+}
+
+.login-form {
+	background-color: #1F1614;
+	padding: 20px;
+	max-width: 400px;
+	margin: 50px auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.login-form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+	</style>
+</head>
+<body>
+	<form class="login-form" action="#" method="post">
+		<h1>Login Form</h1>
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" placeholder="Enter your username" required>
+		<label for="email">Email Address</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

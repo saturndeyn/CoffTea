@@ -1,0 +1,127 @@
+
+<html>
+<head>
+	<title>Login </title>
+	
+	
+	<style>
+	header {
+        background-color: #c4a484;
+        padding: 3px;
+        display: flex;
+		justify-content: space-between;
+        align-items: center;
+        
+      }
+	   #cofftea{
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  #cofftea img{
+	  margin-right:10px;
+	  }
+	  hr{
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+      
+		body {
+		background-color: #c4a484;
+		font-family: sans-serif;
+	 }
+
+		.login-form {
+		background-color: #c4a484;
+		padding: 20px;
+		max-width: 400px;
+		border-radius: 10px;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+		margin: auto; 
+		flex-direction: column;
+	
+		}
+
+		.login-form h1 {
+			margin-bottom: 20px;
+			
+		}
+
+		.login-form label {
+			display: block;
+			margin-bottom: 20px;
+			
+		}
+
+		.login-form input[type="email"],
+		.login-form input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="email"] {
+			width: 450px;
+			height: 35px;
+		}
+
+		.login-form input[type="submit"] {
+			background-color: #f65c5c;
+			color: white;
+			padding: 13px 25px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			display: grid;
+			 
+			
+			
+		}
+
+		.login-form input[type="submit"]:hover {
+			background-color: green;
+			
+		}
+
+	</style>
+</head>
+<body>
+
+	<header style="display: flex; justify-content: center;">
+	  <div style="text-align: center;">
+	  <div id="cofftea">
+	  <a href="Home.html">
+	  <img src="coffee.png"   height="45px" width="45px" >
+	  </a>
+      <h1>COFFTEA</h1>
+	  </div>
+    </header>
+	</div>
+	
+	<hr>
+	
+	<div style="text-align: center;">
+	<h1>Sign in</h1>
+	</div>
+
+	
+	<form class="login-form" action="Home.html" method="post">
+		
+
+
+		<br>
+		<label for="email">Email Address</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+		<br>
+		<br>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+		<br>
+		<br>
+		<input type="submit" value="Sign in">
+	</form>
+</body>
+</html>

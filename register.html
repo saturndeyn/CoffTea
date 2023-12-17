@@ -1,0 +1,131 @@
+
+<html>
+<head>
+	<title>Register </title>
+	<script>
+      function showMessage() {
+        alert("Thank you for registering! Please check your email to verify your account.");
+      }
+    </script>
+	
+	<style>
+	header {
+        background-color: #c4a484;
+        padding: 3px;
+        display: flex;
+		justify-content: space-between;
+        align-items: center;
+        
+      }
+		#cofftea{
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  #cofftea img{
+	  margin-right:10px;
+	  }
+		hr{
+        height: 2px;
+        background-color: black;
+        border: none;
+	  }
+		form {
+			margin: 0 auto;
+			width: 300px;
+			padding: 25px;
+			background-color: #c4a484;
+			border-radius: 5px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+			font-family: sans-serif;
+			font-size: 14px;
+			
+		}
+		body{
+		background: #c4a484;
+		}
+
+		
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: white;
+			box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+			width: 100%;
+			margin-bottom: 20px;
+			font-size: 14px;
+			color: #555;
+		}
+
+		input[type="submit"] {
+			background-color: #f65c5c;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		
+
+
+	</style>
+</head>
+<body>
+
+	<header style="display: flex; justify-content: center;">
+	  <div style="text-align: center;">
+	  <div id="cofftea">
+	  <a href="Home.html">
+	  <img src="coffee.png"   height="45px" width="45px" >
+	  </a>
+      <h1>COFFTEA</h1>
+	  </div>
+    </header>
+	</div>
+	
+	<hr>
+	
+	<div style="text-align: center;">
+	<h1>Register</h1>
+	</div>
+
+	
+	<form>
+		<label for="firstName">First Name</label>
+		<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+		<label for="lastName">Last Name</label>
+		<input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+		<label for="confirmPassword">Confirm Password</label>
+		<input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+
+		<input  onclick="showMessage()" type="submit" value="Register">
+	</form>
+
+
+
+</body>
+</html>
